@@ -2,7 +2,7 @@
   "name": "dokur",
   "displayName": "Dokur - Docker Compose Studio",
   "description": "A schema-driven visual Docker Compose editor with a resource graph, live YAML, and Docker Hub search.",
-  "version": "0.5.11",
+  "version": "0.5.12",
   "publisher": "kadadana",
   "author": "kadadana",
   "license": "MIT",
@@ -136,7 +136,7 @@
     "customEditors": [
       {
         "viewType": "dokur.compose",
-        "displayName": "Dokur - Docker Compose Studio",
+        "displayName": "Dokur",
         "selector": [
           {
             "filenamePattern": "**/*compose*.yml"
@@ -222,7 +222,7 @@
       "activitybar": [
         {
           "id": "dokur",
-          "title": "Dokur - Docker Compose Studio",
+          "title": "Dokur",
           "icon": "media/activity.svg"
         }
       ]
@@ -231,7 +231,7 @@
       "dokur": [
         {
           "id": "dokur.navigator",
-          "name": "Compose Studio"
+          "name": "Dokur"
         },
         {
           "id": "dokur.properties",

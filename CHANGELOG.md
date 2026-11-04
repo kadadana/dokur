@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.12
+
+- Use **Dokur** for the VS Code sidebar and editor titles. The extension listing uses **Dokur - Docker Compose Studio**.
+
 ## 0.5.11
 
 - Added the GitHub repository link to the extension metadata and a graph screenshot to the repository README.

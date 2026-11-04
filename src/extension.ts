@@ -122,7 +122,7 @@ export function activate(context: vscode.ExtensionContext) {
       ? await vscode.workspace.fs.readFile(
           vscode.Uri.joinPath(context.extensionUri, 'examples', 'compose.yaml'),
         )
-      : Buffer.from('# Created with Dokur - Docker Compose Studio\nname: my-project\nservices: {}\n');
+      : Buffer.from('# Created with Dokur\nname: my-project\nservices: {}\n');
     await vscode.workspace.fs.writeFile(uri, content);
     await vscode.commands.executeCommand('dokur.open', uri);
     await navigator.refreshFiles();
@@ -496,6 +496,6 @@ export class ComposeProvider implements vscode.CustomTextEditorProvider, vscode.
     const nonce = randomBytes(24).toString('base64');
     const resource = (name: string) =>
       webview.asWebviewUri(vscode.Uri.joinPath(this.context.extensionUri, 'dist', name));
-    webview.html = `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src ${webview.cspSource} data:; font-src ${webview.cspSource}; style-src ${webview.cspSource} 'unsafe-inline'; script-src 'nonce-${nonce}'; connect-src 'none';"><link rel="stylesheet" href="${resource('webview.css')}"><title>Dokur - Docker Compose Studio</title></head><body><div id="root"></div><script nonce="${nonce}" src="${resource('webview.js')}"></script></body></html>`;
+    webview.html = `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src ${webview.cspSource} data:; font-src ${webview.cspSource}; style-src ${webview.cspSource} 'unsafe-inline'; script-src 'nonce-${nonce}'; connect-src 'none';"><link rel="stylesheet" href="${resource('webview.css')}"><title>Dokur</title></head><body><div id="root"></div><script nonce="${nonce}" src="${resource('webview.js')}"></script></body></html>`;
   }
 }

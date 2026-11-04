@@ -10,7 +10,7 @@ Built by **kadadana**.
 
 Requires VS Code **1.96 or later**. Docker is optional for editing Compose files.
 
-1. Open a folder with a Compose file and select **Dokur - Docker Compose Studio** in the Activity Bar.
+1. Open a folder with a Compose file and select **Dokur** in the Activity Bar.
 2. Choose a file under **Compose Files**. You can also right-click a Compose YAML file and select **Dokur: Open Visual Editor**.
 3. Select a resource on the graph or in the sidebar, then edit it in **Properties**.
 
