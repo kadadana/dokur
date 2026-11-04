@@ -4,7 +4,7 @@ Edit Docker Compose files visually in VS Code. Follow connections between resour
 
 Built by **kadadana**.
 
-![Dokur graph showing an authentication service, PostgreSQL, Redis, RabbitMQ, and their connections](media/compose-studio.png)
+![Dokur in VS Code, with the Compose Files and Properties sidebar beside an authentication stack graph](media/compose-studio.png)
 
 ## Get started
 
