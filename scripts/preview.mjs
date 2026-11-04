@@ -39,7 +39,7 @@ function snapshot(surface = 'canvas') {
     surface,
   };
 }
-const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/dist/webview.css"><title>Docker Compose Studio · Preview</title></head><body><div id="root"></div><script src="/preview-bridge.js"></script><script src="/dist/webview.js"></script></body></html>`;
+const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/dist/webview.css"><title>Dokur - Docker Compose Studio · Preview</title></head><body><div id="root"></div><script src="/preview-bridge.js"></script><script src="/dist/webview.js"></script></body></html>`;
 const bridge = `const surface = new URLSearchParams(location.search).get('surface') || 'canvas';
 const events = new EventSource('/events?surface=' + surface);
 events.onmessage = event => window.dispatchEvent(new MessageEvent('message', {data: JSON.parse(event.data)}));

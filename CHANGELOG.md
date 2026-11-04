@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.10
+
+- Set the extension display name to **Dokur - Docker Compose Studio** across VS Code and Marketplace.
+
 ## 0.5.9
 
 - Updated the Marketplace logo and Activity Bar icon to match the editor's weave symbol.
