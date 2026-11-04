@@ -1,6 +1,7 @@
 node_modules/
 dist/
 *.vsix
+!/releases/*.vsix
 test-results/
 playwright-report/
 .preview/

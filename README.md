@@ -14,7 +14,7 @@ Requires VS Code **1.96 or later**. Docker is optional for editing Compose files
 2. Choose a file under **Compose Files**. You can also right-click a Compose YAML file and select **Dokur: Open Visual Editor**.
 3. Select a resource on the graph or in the sidebar, then edit it in **Properties**.
 
-Use **Dokur: New Compose File** to start from scratch or **Dokur: Create Example Stack** to explore the editor. For a local VSIX, use **Extensions → … → Install from VSIX…**.
+Use **Dokur: New Compose File** to start from scratch or **Dokur: Create Example Stack** to explore the editor. To install a local build, choose a VSIX from `releases/` using **Extensions → … → Install from VSIX…**.
 
 ## Work with the graph
 
@@ -54,5 +54,7 @@ npm run package
 ```
 
 Press **F5** to launch the Extension Development Host. Run `npm run preview` after building to preview the graph in a browser. Use `npm run schema:update` to refresh the bundled Compose schema, or `npm run materials:prepare` to regenerate the WebP textures from the original artwork.
+
+`npm run package` writes `releases/dokur-<version>.vsix`.
 
 Dokur is licensed under MIT. The VSIX includes notices for its bundled dependencies, the Apache-2.0 Compose schema, and the SIL Open Font License for Inter.

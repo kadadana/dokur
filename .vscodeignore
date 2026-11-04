@@ -6,6 +6,7 @@ scripts/**
 node_modules/**
 .preview/**
 artifacts/**
+releases/**
 test-results/**
 playwright-report/**
 *.ts

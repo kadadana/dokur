@@ -255,7 +255,7 @@
     "preview": "node scripts/preview.mjs",
     "schema:update": "node scripts/update-schema.mjs",
     "vscode:prepublish": "npm run check && npm run build",
-    "package": "vsce package --no-dependencies --readme-path dist/marketplace-readme.md",
+    "package": "vsce package --no-dependencies --readme-path dist/marketplace-readme.md --out releases",
     "test:vscode": "node scripts/test-vscode.mjs",
     "materials:prepare": "node scripts/prepare-materials.mjs"
   },
