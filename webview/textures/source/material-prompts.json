@@ -1,0 +1,76 @@
+{
+  "tool": "Built-in Imagegen",
+  "assets": [
+    {
+      "file": "fabric-services.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: an isolated fabric swatch for a desktop interface, NOT a UI mockup. A real piece of softly washed, muted mid blue-gray DENIM with authentic diagonal cotton twill, photographed straight from above. A roughly rectangular portrait cloth piece, approximately 3:4 proportions, entirely visible against a genuinely transparent background. All four raw edges are naturally uneven and frayed, with irregular short loose cotton threads, a few shallow asymmetric torn notches, and gently damaged irregular corners. Keep the center 80 percent flat, calm, opaque, uniform and free of decorations so text can sit over it. The outline must feel hand-torn, not a perfect rectangle, not a repeated zigzag or scallop, not pinking-shear cuts. Leave about 4 percent transparent padding around the fraying. Soft diffuse even light, natural yarn detail, low contrast, no large folds, no curling corners or perspective, no cast shadow on a background. No hands, objects, patterns, hems, stitching, buttons, text, logos or watermarks. Real photographic material, no drawing, no vector, no CGI. Restrained desaturated blue denim color, fine realistic fibers, authentic damaged edges.",
+      "original": "exec-5e987fbc-15eb-4bde-a324-104f79c871be.png"
+    },
+    {
+      "file": "rope-configs.png",
+      "reusedFrom": "../cotton-rope.png",
+      "promptSource": "../README.md#cotton-cord-prompt"
+    },
+    {
+      "file": "fabric-networks.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: isolated real fabric swatch for a developer interface, not a UI mockup. Straight top-down macro photograph of a single flat roughly rectangular portrait 3:4 piece of muted sage-green heavy cotton CANVAS with a clear tight plain weave and soft worn cotton fibers. All four raw edges have asymmetric natural hand-torn cuts, short loose fibers appropriate to the material, irregular shallow notches, and damaged corners. No perfect straight borders, no repeated zigzag, no pinking shears. Entire piece visible with about 4 percent transparent padding on all sides and genuinely transparent background. Keep the middle 80 percent calm, even, opaque, flat, low contrast and without holes for readable UI text. Authentic material microstructure. Soft diffuse even light. No large folds, curled corners, background cast shadow, stitching, hems, props, text or watermark. Real photography, not illustration, not vector, not CGI.",
+      "original": "exec-94cd701a-33e4-4912-bdf5-783c21685d26.png"
+    },
+    {
+      "file": "fabric-volumes.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: isolated real fabric swatch for a developer interface, not a UI mockup. Straight top-down macro photograph of a single flat roughly rectangular portrait 3:4 piece of warm sand and golden-tan dense JUTE BURLAP with coarse irregular bast fibers and a tactile rustic weave, opaque without see-through holes. All four raw edges have asymmetric natural hand-torn cuts, short loose fibers appropriate to the material, irregular shallow notches, and damaged corners. No perfect straight borders, no repeated zigzag, no pinking shears. Entire piece visible with about 4 percent transparent padding on all sides and genuinely transparent background. Keep the middle 80 percent calm, even, opaque, flat, low contrast and without holes for readable UI text. Authentic material microstructure. Soft diffuse even light. No large folds, curled corners, background cast shadow, stitching, hems, props, text or watermark. Real photography, not illustration, not vector, not CGI.",
+      "original": "exec-afc2024f-8949-480d-bb47-a0cfa17fcc8c.png"
+    },
+    {
+      "file": "fabric-secrets.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: isolated real fabric swatch for a developer interface, not a UI mockup. Straight top-down macro photograph of a single flat roughly rectangular portrait 3:4 piece of muted dusty burgundy COTTON VELVET with short soft matte pile and naturally torn woven backing at the edges, no glossy theatrical sheen. All four raw edges have asymmetric natural hand-torn cuts, short loose fibers appropriate to the material, irregular shallow notches, and damaged corners. No perfect straight borders, no repeated zigzag, no pinking shears. Entire piece visible with about 4 percent transparent padding on all sides and genuinely transparent background. Keep the middle 80 percent calm, even, opaque, flat, low contrast and without holes for readable UI text. Authentic material microstructure. Soft diffuse even light. No large folds, curled corners, background cast shadow, stitching, hems, props, text or watermark. Real photography, not illustration, not vector, not CGI.",
+      "original": "exec-8a863718-9d44-4896-bad2-7c254e33628a.png"
+    },
+    {
+      "file": "fabric-configs.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: isolated real fabric swatch for a developer interface, not a UI mockup. Straight top-down macro photograph of a single flat roughly rectangular portrait 3:4 piece of natural warm ivory fine washed LINEN with delicate irregular flax yarns and a soft loose weave, fully opaque. All four raw edges have asymmetric natural hand-torn cuts, short loose fibers appropriate to the material, irregular shallow notches, and damaged corners. No perfect straight borders, no repeated zigzag, no pinking shears. Entire piece visible with about 4 percent transparent padding on all sides and genuinely transparent background. Keep the middle 80 percent calm, even, opaque, flat, low contrast and without holes for readable UI text. Authentic material microstructure. Soft diffuse even light. No large folds, curled corners, background cast shadow, stitching, hems, props, text or watermark. Real photography, not illustration, not vector, not CGI.",
+      "original": "exec-9937eff9-97b5-42cf-a158-92ff52bd8b24.png"
+    },
+    {
+      "file": "fabric-models.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: isolated real fabric swatch for a developer interface, not a UI mockup. Straight top-down macro photograph of a single flat roughly rectangular portrait 3:4 piece of muted heather lavender-lilac WOOL FELT with a soft matted nonwoven fiber surface and naturally fuzzy torn edges, do not depict a woven grid. All four raw edges have asymmetric natural hand-torn cuts, short loose fibers appropriate to the material, irregular shallow notches, and damaged corners. No perfect straight borders, no repeated zigzag, no pinking shears. Entire piece visible with about 4 percent transparent padding on all sides and genuinely transparent background. Keep the middle 80 percent calm, even, opaque, flat, low contrast and without holes for readable UI text. Authentic material microstructure. Soft diffuse even light. No large folds, curled corners, background cast shadow, stitching, hems, props, text or watermark. Real photography, not illustration, not vector, not CGI.",
+      "original": "exec-826f52ab-f3de-4f76-b0b3-d55006b7072c.png"
+    },
+    {
+      "file": "fabric-jobs.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: isolated real fabric swatch for a developer interface, not a UI mockup. Straight top-down macro photograph of a single flat roughly rectangular portrait 3:4 piece of faded terracotta and muted rust COTTON DRILL TWILL with a restrained diagonal weave and slightly worn fibers. All four raw edges have asymmetric natural hand-torn cuts, short loose fibers appropriate to the material, irregular shallow notches, and damaged corners. No perfect straight borders, no repeated zigzag, no pinking shears. Entire piece visible with about 4 percent transparent padding on all sides and genuinely transparent background. Keep the middle 80 percent calm, even, opaque, flat, low contrast and without holes for readable UI text. Authentic material microstructure. Soft diffuse even light. No large folds, curled corners, background cast shadow, stitching, hems, props, text or watermark. Real photography, not illustration, not vector, not CGI.",
+      "original": "exec-20e376b9-9f2f-48b4-a085-2a2be7b1061e.png"
+    },
+    {
+      "file": "rope-services.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: repeating real cord texture strip. Macro top-down photograph of a single perfectly straight continuous horizontal washed desaturated denim-blue three-ply twisted COTTON CORD with delicate cotton fuzz, with authentic natural fibers and rounded volume. Runs from left image edge to right edge with both ends cropped so it repeats. Very wide approximately 3:1 composition. The cord occupies about 75 percent of image height, leaving only narrow genuinely transparent margins above and below. Soft diffuse light, low contrast, matte subdued material. No ground plane or background shadow, knots, loops, end caps, metal, plastic, glow, synthetic ribbed tubing, digitally drawn stripes, text or watermark. Real photographic cord on transparent background.",
+      "original": "exec-e7edc7dd-dc73-4f4c-ab86-3fbf0a1f1f10.png"
+    },
+    {
+      "file": "rope-networks.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: repeating real cord texture strip. Macro top-down photograph of a single perfectly straight continuous horizontal muted sage-green softly BRAIDED COTTON CORD with a genuine intertwined braid structure and small natural fibers, with authentic natural fibers and rounded volume. Runs from left image edge to right edge with both ends cropped so it repeats. Very wide approximately 3:1 composition. The cord occupies about 75 percent of image height, leaving only narrow genuinely transparent margins above and below. Soft diffuse light, low contrast, matte subdued material. No ground plane or background shadow, knots, loops, end caps, metal, plastic, glow, synthetic ribbed tubing, digitally drawn stripes, text or watermark. Real photographic cord on transparent background.",
+      "original": "exec-488fa079-90bc-4156-a9ed-b15e246aa9c7.png"
+    },
+    {
+      "file": "rope-volumes.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: repeating real cord texture strip. Macro top-down photograph of a single perfectly straight continuous horizontal warm golden-tan twisted JUTE TWINE with irregular coarse bast fibers and soft stray hairs, with authentic natural fibers and rounded volume. Runs from left image edge to right edge with both ends cropped so it repeats. Very wide approximately 3:1 composition. The cord occupies about 75 percent of image height, leaving only narrow genuinely transparent margins above and below. Soft diffuse light, low contrast, matte subdued material. No ground plane or background shadow, knots, loops, end caps, metal, plastic, glow, synthetic ribbed tubing, digitally drawn stripes, text or watermark. Real photographic cord on transparent background.",
+      "original": "exec-90f4ff55-d181-4644-ba9e-130406838285.png"
+    },
+    {
+      "file": "rope-secrets.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: repeating real cord texture strip. Macro top-down photograph of a single perfectly straight continuous horizontal dusty burgundy finely braided SILK-COTTON CORD with smooth small woven fibers and a gentle low-sheen surface, with authentic natural fibers and rounded volume. Runs from left image edge to right edge with both ends cropped so it repeats. Very wide approximately 3:1 composition. The cord occupies about 75 percent of image height, leaving only narrow genuinely transparent margins above and below. Soft diffuse light, low contrast, matte subdued material. No ground plane or background shadow, knots, loops, end caps, metal, plastic, glow, synthetic ribbed tubing, digitally drawn stripes, text or watermark. Real photographic cord on transparent background.",
+      "original": "exec-82b2f5e2-6396-4857-828d-b253361a1f8b.png"
+    },
+    {
+      "file": "rope-models.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: repeating real cord texture strip. Macro top-down photograph of a single perfectly straight continuous horizontal muted heather lilac thick soft WOOL YARN with small fuzzy hairs and a gentle loose twist, with authentic natural fibers and rounded volume. Runs from left image edge to right edge with both ends cropped so it repeats. Very wide approximately 3:1 composition. The cord occupies about 75 percent of image height, leaving only narrow genuinely transparent margins above and below. Soft diffuse light, low contrast, matte subdued material. No ground plane or background shadow, knots, loops, end caps, metal, plastic, glow, synthetic ribbed tubing, digitally drawn stripes, text or watermark. Real photographic cord on transparent background.",
+      "original": "exec-84fbddd4-a9f4-4e44-8813-5e2ea45963d9.png"
+    },
+    {
+      "file": "rope-jobs.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: repeating real cord texture strip. Macro top-down photograph of a single perfectly straight continuous horizontal faded terracotta and muted rust tightly twisted WAXED COTTON CORD with a soft matte finish and subtle natural fibers, with authentic natural fibers and rounded volume. Runs from left image edge to right edge with both ends cropped so it repeats. Very wide approximately 3:1 composition. The cord occupies about 75 percent of image height, leaving only narrow genuinely transparent margins above and below. Soft diffuse light, low contrast, matte subdued material. No ground plane or background shadow, knots, loops, end caps, metal, plastic, glow, synthetic ribbed tubing, digitally drawn stripes, text or watermark. Real photographic cord on transparent background.",
+      "original": "exec-cb02c828-4aec-474e-b34d-735f12e85dce.png"
+    }
+  ],
+  "generatedOn": "2026-11-03"
+}

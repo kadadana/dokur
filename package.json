@@ -1,0 +1,283 @@
+{
+  "name": "dokur",
+  "displayName": "Docker Compose Studio",
+  "description": "A schema-driven visual Docker Compose editor with a resource graph, live YAML, and Docker Hub search.",
+  "version": "0.5.9",
+  "publisher": "kadadana",
+  "author": "kadadana",
+  "license": "MIT",
+  "galleryBanner": {
+    "color": "#242128",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "docker",
+    "compose",
+    "visual",
+    "yaml",
+    "dockerhub"
+  ],
+  "main": "./dist/extension.cjs",
+  "activationEvents": [
+    "onCustomEditor:dokur.compose",
+    "onView:dokur.navigator",
+    "onView:dokur.properties"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": true
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "dokur.new",
+        "title": "Dokur: New Compose File",
+        "icon": "$(add)"
+      },
+      {
+        "command": "dokur.open",
+        "title": "Dokur: Open Visual Editor",
+        "icon": {
+          "light": "media/weave-light.svg",
+          "dark": "media/weave-dark.svg"
+        }
+      },
+      {
+        "command": "dokur.example",
+        "title": "Dokur: Create Example Stack"
+      },
+      {
+        "command": "dokur.architecture",
+        "title": "Dokur: Architecture",
+        "icon": {
+          "light": "media/weave-light.svg",
+          "dark": "media/weave-dark.svg"
+        }
+      },
+      {
+        "command": "dokur.addResource",
+        "title": "Dokur: Add Resource",
+        "icon": "$(add)"
+      },
+      {
+        "command": "dokur.projectSettings",
+        "title": "Dokur: Project Settings",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "dokur.searchImages",
+        "title": "Dokur: Search Docker Hub",
+        "icon": "$(search)"
+      },
+      {
+        "command": "dokur.source",
+        "title": "Dokur: Open YAML Source",
+        "icon": "$(code)"
+      },
+      {
+        "command": "dokur.problems",
+        "title": "Dokur: Show Problems",
+        "icon": "$(warning)"
+      },
+      {
+        "command": "dokur.refresh",
+        "title": "Dokur: Refresh Compose Files",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "dokur.format",
+        "title": "Dokur: Format Compose YAML",
+        "icon": "$(list-tree)"
+      },
+      {
+        "command": "dokur.property.change",
+        "title": "Dokur: Change Property Value",
+        "icon": "$(symbol-field)"
+      },
+      {
+        "command": "dokur.property.add",
+        "title": "Dokur: Add Property",
+        "icon": "$(add)"
+      },
+      {
+        "command": "dokur.property.type",
+        "title": "Dokur: Change Property Type",
+        "icon": "$(symbol-misc)"
+      },
+      {
+        "command": "dokur.property.remove",
+        "title": "Dokur: Remove Property or Resource",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "dokur.property.rename",
+        "title": "Dokur: Rename Resource Key",
+        "icon": "$(symbol-key)"
+      },
+      {
+        "command": "dokur.property.image",
+        "title": "Dokur: Choose Docker Hub Image",
+        "icon": "$(search)"
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "dokur.compose",
+        "displayName": "Docker Compose Studio",
+        "selector": [
+          {
+            "filenamePattern": "**/*compose*.yml"
+          },
+          {
+            "filenamePattern": "**/*compose*.yaml"
+          }
+        ],
+        "priority": "option"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "dokur.open",
+          "when": "resourceExtname =~ /\\.ya?ml/",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "dokur.open",
+          "when": "resourceExtname =~ /\\.ya?ml/",
+          "group": "navigation"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "dokur.new",
+          "when": "view == dokur.navigator",
+          "group": "navigation@1"
+        },
+        {
+          "command": "dokur.open",
+          "when": "view == dokur.navigator",
+          "group": "navigation@2"
+        },
+        {
+          "command": "dokur.refresh",
+          "when": "view == dokur.navigator",
+          "group": "navigation@3"
+        },
+        {
+          "command": "dokur.property.add",
+          "when": "view == dokur.properties",
+          "group": "navigation@1"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "dokur.addResource",
+          "when": "view == dokur.navigator && viewItem == dokur.kind",
+          "group": "inline"
+        },
+        {
+          "command": "dokur.property.image",
+          "when": "view == dokur.properties && viewItem == dokur.imageProperty",
+          "group": "inline"
+        },
+        {
+          "command": "dokur.property.add",
+          "when": "view == dokur.properties && viewItem =~ /dokur\\.(collectionProperty|selectedResource|project)/",
+          "group": "1_modify"
+        },
+        {
+          "command": "dokur.property.type",
+          "when": "view == dokur.properties && viewItem =~ /dokur\\.(property|imageProperty)/",
+          "group": "1_modify"
+        },
+        {
+          "command": "dokur.property.remove",
+          "when": "view == dokur.properties && viewItem =~ /dokur\\.(property|imageProperty|collectionProperty|selectedResource)/",
+          "group": "2_remove"
+        },
+        {
+          "command": "dokur.property.rename",
+          "when": "view == dokur.properties && viewItem == dokur.selectedResource",
+          "group": "1_modify"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "dokur",
+          "title": "Docker Compose Studio",
+          "icon": "media/activity.svg"
+        }
+      ]
+    },
+    "views": {
+      "dokur": [
+        {
+          "id": "dokur.navigator",
+          "name": "Compose Studio"
+        },
+        {
+          "id": "dokur.properties",
+          "name": "Properties"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "dokur.properties",
+        "contents": "Open a Compose file, then select a resource to view its properties.\n[Open Compose File](command:dokur.open)"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "check": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:ui": "playwright test",
+    "preview": "node scripts/preview.mjs",
+    "schema:update": "node scripts/update-schema.mjs",
+    "vscode:prepublish": "npm run check && npm run build",
+    "package": "vsce package --no-dependencies --allow-missing-repository",
+    "test:vscode": "node scripts/test-vscode.mjs",
+    "materials:prepare": "node scripts/prepare-materials.mjs"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.12.1",
+    "ajv": "^8.20.0",
+    "lucide-react": "^1.66.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-electron": "^3.1.0",
+    "@vscode/vsce": "^4.1.0",
+    "esbuild": "^0.28.2",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
+  },
+  "icon": "media/icon.png"
+}

@@ -1,0 +1,43 @@
+# A small stack to explore in Dokur. Replace images and settings for your project.
+name: storefront
+services:
+  gateway:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    networks:
+      - backend
+  api:
+    image: node:22-alpine
+    working_dir: /app
+    command: node server.js
+    environment:
+      NODE_ENV: development
+      DATABASE_URL: postgres://app:${DB_PASSWORD:?Set DB_PASSWORD}@database:5432/app
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - backend
+  database:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_DB: app
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U app]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+networks:
+  backend:
+    driver: bridge
+volumes:
+  pgdata: {}
