@@ -2,10 +2,14 @@
   "name": "dokur",
   "displayName": "Dokur - Docker Compose Studio",
   "description": "A schema-driven visual Docker Compose editor with a resource graph, live YAML, and Docker Hub search.",
-  "version": "0.5.10",
+  "version": "0.5.11",
   "publisher": "kadadana",
   "author": "kadadana",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kadadana/dokur.git"
+  },
   "galleryBanner": {
     "color": "#242128",
     "theme": "dark"
@@ -251,7 +255,7 @@
     "preview": "node scripts/preview.mjs",
     "schema:update": "node scripts/update-schema.mjs",
     "vscode:prepublish": "npm run check && npm run build",
-    "package": "vsce package --no-dependencies --allow-missing-repository",
+    "package": "vsce package --no-dependencies --readme-path dist/marketplace-readme.md",
     "test:vscode": "node scripts/test-vscode.mjs",
     "materials:prepare": "node scripts/prepare-materials.mjs"
   },

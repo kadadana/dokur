@@ -17,3 +17,4 @@ schema/**
 .prettierrc.json
 .vscode-test/**
 media/compose-studio.png
+README.md

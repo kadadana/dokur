@@ -63,6 +63,12 @@ if (!watch) {
     );
   }
   await writeFile(resolve(output, 'THIRD-PARTY-NOTICES.txt'), notices.join('\n\n---\n\n') + '\n');
+  const readme = await readFile('README.md', 'utf8');
+  // Marketplace cannot fetch images from the private repository.
+  await writeFile(
+    resolve(output, 'marketplace-readme.md'),
+    readme.replace(/^!\[[^\]\r\n]*\]\(media\/compose-studio\.png\)\r?\n(?:\r?\n)?/m, ''),
+  );
 }
 await copyFile('schema/NOTICE.md', 'dist/SCHEMA-NOTICE.md');
 await copyFile('schema/SCHEMA-LICENSE.txt', 'dist/SCHEMA-LICENSE.txt');

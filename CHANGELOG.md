@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.11
+
+- Added the GitHub repository link to the extension metadata and a graph screenshot to the repository README.
+
 ## 0.5.10
 
 - Set the extension display name to **Dokur - Docker Compose Studio** across VS Code and Marketplace.
